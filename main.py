@@ -47,4 +47,5 @@ def two():
         c.execute("""SELECT e.emp_name, d.dept_name FROM employees e CROSS JOIN departments d""")
         for i in c.fetchall():
             print(f'{i[0]} | {i[1]}')
+            # Забыл написать Подсчет длины. Простыми словами число строк из таблицы e * число строк из таблицы d = Сколько всего строк <3
 
